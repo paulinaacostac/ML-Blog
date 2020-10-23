@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="lib/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Control the column width, and how they should appear on different devices -->
+
+      <div class="row no-gutters">
+        <div class="col-md-3 d-flex justify-content-center">
+          <img class="imagenPrincipal"
+          src=https://www.securityroundtable.org/wp-content/uploads/2019/06/machine-learning.png
+          height="100%" width="100%" alt="Avatar" />
+        </div>
+        <div class="col-md-9">
+          <div class="row no-gutters" style="height: 70px">
+            <div class="col-md-10" style="background-color: #21618c">
+              <div class="tituloPagina">
+                <h1>Machine Learning</h1>
+              </div>
+            </div>
+            <div class="col-md-2" style="background-color: #6e93d6">
+              <div class="iconoFlecha">
+                <a href=https://web.stanford.edu/~hastie/Papers/ESLII.pdf target="_blank">
+                <img class
+                src=https://image.flaticon.com/icons/png/128/60/60758.png
+                height="60%" width="30%" alt="flechita" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row no-gutters" style="height: 60px">
+            <div class="col-md-10" style="background-color: #9cbbb6">
+              <div class="subtitulo">
+                <h3>Aprendizaje Supervisado</h3>
+              </div>
+            </div>
+            <div class="col-md-2" style="background-color: #e0e2db">
+              <div class="iconoFlecha">
+                <a href=https://web.stanford.edu/~hastie/Papers/ESLII.pdf target="_blank">
+                <img class
+                src=https://image.flaticon.com/icons/png/128/60/60758.png
+                height="60%" width="30%" alt="flechita" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row no-gutters" style="height: 73px">
+            <div class="col-md-2" style="background-color: #5fa55a">
+              <figure class="grupoImagenes">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEXQAAD////NAAD13Nz87+/wwMD12dnKAADuuLjXRUX9+Pjrra3XQkLvu7vWPz/vvr7ppKTcZGTbXl7aWFjZUlLYS0vonZ3mlpb55OTfdHTebW3xxsb00NDdZ2fts7Pmk5PTISHjhobhfHzSHBzVMTHRDw/VNTXfcHDUKip+QHsdAAAFFElEQVR4nO3da1fbMAwG4NilKQQYjDuU+4Dx/3/hekrHSmOJ1NbFyvR+pRg9JzmQRIppwtjTaBfAnv9D2LWTcabtVsJ2FseZWbsSTmIzzsSJC63HhfbjQvtxof240H5caD8utB8X2o8L7ceF9uNC+3Gh/bjQflxoPy60Hxfajwvtx4X240L7caH9kAm/DiKRLVS4WEMoPJyuZTd7sXgzn25kflpUGJFwucxa2szV4nVisJCgtGJhvN2sap61XPydAIbwo6A0GmGc9qs6ylgv3iSBWWv9W5RAGPdTZR1vvSBwBBdRF+6kqtp6QegILnJRcoJVI0SAoRuDEAMuKsxPLcJ4hwGn9o8hDsz70/N36SqEjMA6hHynaFOHkBVYg5AXWIEw/sSARRdsH+trC7mB6kJ2oLYwnmDAQ4onK7pCAaCuUAKoKsSB+c96Nn6KnlAGqCgUAuoJ4ykGvKd7Pq0lFANqCfFTlBKoJJQ7gkpCSaCKUBSoIYxnGHCfussnLxQGygulgeJCcaC0UB4oLFQAygpx4PbtuGHVCQrjuQJQUqgDFBQqAeWEWkAxoRpQSogDS9r031cnIox7akAZoSZQRKgKlBDqAgWEOPCSG8gvjAe6QHahOpBbqA9kFsYf6kBeIQ58EAGyCnHg1YyQgVXHKESBITxZP4btIw4M4Z3QgVTHJtzpvhNeGf9NMyDsV2zL6jSF4Y1QAlanKtwxfU0zKDwPgb9WpysMZ4QWoDplYcl7BgOrUxaSjB/i1WkLw53ZpxiDQ6hJVqcvvLX6rG14no0+L90ivwhB/erEhBP41a3cd2qHVSclXNwQH4Ff5LzdlxIuDxN8P/VCJ+pVJyP8+H0JDyQy3irKCFev9sRd8BMWe8Br+RxpjvB5ek7jSVQnIFy7RYLHTdhuFQWE6ydgvAc/Rj11+fkj2YVfn2wjnz0pxqSr4xZuPhWFG/pdIQWqjlnYu+ZMb8CwTNn7vmB1vMLrxHDbVp8uD68weXeL9IRf8yFwdZzC0/QQ7TEo5LhV5BSeQZPe8HnK0K1hFO6BKyJNqcfsKsDq+HpP8ILxAhTSX4IrvRV0BRLJuzVKb3a9gMKyTaFS1Sm9u3YJCqkvwdXeP5ykvmcZ4m6N2juk76AwlO1A16tO7S3ZB1BI261RfNMZPk9JuzWKb6sjsxo3hETN9/GfYGJ2LYkfo7mnQgsKCS/BVffFeIUPIl23Rnfnj2eYSNatUd69pbcr6FbfPqw63R14kPOUqlujvcdQas/ZVYgGptT3iZqDQqJLcG1h08AHkaZboy6EN54l6taoC9nPU30hdp5S7DRUgxDZN5GgW1ODEBlhIOjW1CDERhjKuzV1CJE9lYq7NXUIkRGG4m5NHUJshKF0YKoSYYNsrFTYralFiIwwFL5bU4sQa7mVdWuqESKjNmXdmnqEyAhDOMiurSYhdp6WXIJXJMRGGAq6NTUJkRGGgm5NTULsPM2/BK9KiI0wZO8+X5cQGWEI17nVVSXERhhyN7+uTNi8gcLH3Oo05mmwtaARhuwBW5L/2ZXc/X8vsyDgPM2+TaT5r2QJ4kHueukRhvw/+UT/Wa73GCIbCIwwFNRGIuwdxXxgujVccHdBJNxcVfG7e6uxCGuKC+3HhfbjQvtxof240H5caD8utB8X2o8L7ceF9uNC+3Gh/bjQflxoPy60Hxfajwvtx4X240L7caH9uNB+PoXtLI4zs3Yl7NrJONN2K+G440L7+QPK4U+zmdKNJQAAAABJRU5ErkJggg=="
+                  width="40"
+                  height="40"
+                  alt=""
+                />
+                <figcaption>Keras</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-2" style="background-color: #01b4bc">
+              <figure class="grupoImagenes">
+                <img
+                  src="https://iconape.com/wp-content/files/zp/110773/png/tensorflow-2.png"
+                  width="40"
+                  height="40"
+                  alt=""
+                />
+                <figcaption>Tensorflow</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-2" style="background-color: #f6d51f">
+              <figure class="grupoImagenes">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/1200px-PyTorch_logo_icon.svg.png"
+                  width="30"
+                  height="40"
+                  alt=""
+                />
+                <figcaption>Pytorch</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-2" style="background-color: #fa8925">
+              <figure class="grupoImagenes">
+                <img
+                  src="https://miro.medium.com/max/200/1*i_ncmAcN81MRMNRDcenKiw.png"
+                  width="40"
+                  height="40"
+                  alt=""
+                />
+                <figcaption>Colab</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-2" style="background-color: #fa5457">
+              <figure class="grupoImagenes">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png"
+                  width="40"
+                  height="40"
+                  alt=""
+                />
+                <figcaption>Python</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-2" style="background-color: #491d88">
+              <figure class="grupoImagenes">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1200px-Scikit_learn_logo_small.svg.png"
+                  width="60"
+                  height="40"
+                  alt=""
+                />
+                <figcaption>Scikit</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-md-8">
+          <div class="row no-gutters">
+            <h3 class="pasos">1. Escoger tipo de modelo</h3>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-md-4 d-flex justify-content-center">
+              <div
+                class="card text-white bg-info mb-3"
+                style="max-width: 18rem"
+              >
+                <div class="card-header"><h5>Regresion</h5></div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Cuando se desea predecir un valor numerico real y continuo
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+              <div
+                class="card text-white bg-info mb-3"
+                style="max-width: 18rem"
+              >
+                <div class="card-header"><h5>Clasificacion Binaria</h5></div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Cuando se desea predecir un valor categorico o discreto que
+                    pertenece unicamente a 2 clases.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+              <div
+                class="card text-white bg-info mb-3"
+                style="max-width: 18rem"
+              >
+                <div class="card-header"><h5>Clasificacion Multiclase</h5></div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Cuando se desea predecir un valor categorico o discreto que
+                    pertenece a mas de 2 clases.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" style="background-color: #e0e2db">
+          <div class="row no-gutters">
+            <h3 class="pasos">2. Preprocesamiento</h3>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-md-5">
+              <p class="tablaPto2col1"><b>Normalizacion</b></p>
+            </div>
+            <div class="col-md-6">
+              <p class="tablaPto2">Varia la escala de los datos</p>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-md-5">
+              <p class="tablaPto2col1"><b>Estandarizacion</b></p>
+            </div>
+            <div class="col-md-6">
+              <p class="tablaPto2col2">Reduce el tamaño de los datos</p>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-md-5">
+              <p class="tablaPto2col1"><b>Balancear datos</b></p>
+            </div>
+            <div class="col-md-6">
+              <p class="tablaPto2col2">Evita el sesgo en entrenamiento</p>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-md-5">
+              <p class="tablaPto2col1"><b>One hot encoding</b></p>
+            </div>
+            <div class="col-md-6">
+              <p class="tablaPto2col2">Facilita la clasificacion multiclase</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-md-4" style="background-color: #63a583">
+          <div class="letrasBlancas">
+            <div class="row no-gutters">
+              <h3 class="pasos">3. Escoger Modelo</h3>
+            </div>
+            <div class="row no-gutters">
+              <ul>
+                <li>Regresion Lineal</li>
+                <li>Regresion Logistica</li>
+                <li>Random Forests</li>
+                <li>Support Vector Machine</li>
+                <li>Redes Neuronales</li>
+                <li>Redes Convolucionales</li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://scikit-learn.org/stable/supervised_learning.html"
+                    >Mas..</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8" style="background-color: #9db33e">
+          <div class="letrasBlancas">
+            <div class="row no-gutters">
+              <h3 class="pasos">4. Dividir Dataset</h3>
+            </div>
+            <div class="row no-gutters d-flex justify-content-center">
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="circulos">
+                  <div class="titulosCirculos">
+                    <h6>Datos entrenamiento</h6>
+                  </div>
+                  <div class="page">
+                    <div class="clearfix">
+                      <div class="c100 p80">
+                        <span>80%</span>
+                        <div class="slice">
+                          <div class="bar"></div>
+                          <div class="fill"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="circulos">
+                  <div class="titulosCirculos">
+                    <h6>Datos prueba</h6>
+                  </div>
+                  <div class="page">
+                    <div class="clearfix">
+                      <div class="c100 p20">
+                        <span>20%</span>
+                        <div class="slice">
+                          <div class="bar"></div>
+                          <div class="fill"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="circulos">
+                  <div class="titulosCirculos">
+                    <h6>Datos validacion</h6>
+                  </div>
+                  <div class="page">
+                    <div class="clearfix">
+                      <div class="c100 p10">
+                        <span>10%</span>
+                        <div class="slice">
+                          <div class="bar"></div>
+                          <div class="fill"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
